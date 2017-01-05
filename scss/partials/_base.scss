@@ -1,0 +1,69 @@
+@import "variables";
+
+// Going to just write the styles here
+
+$medium: new-breakpoint(max-width $medium-screen);
+$large: new-breakpoint(max-width $large-screen);
+
+section.app-main,section.dashboard {
+  @include shift(3);
+  @include span-columns(6);
+
+  @include media($large) {
+    @include shift(2);
+    @include span-columns(8);
+  }
+
+  @include media($medium) {
+    @include shift(1);
+    @include span-columns(10);
+  }
+}
+
+section.dashboard {
+  h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+    color: $gray;
+    text-transform: none;
+    margin-bottom: 3em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+  .success-animation {
+    display:  block;
+    margin: 0 auto 3em auto;
+  }
+
+  .success-subtitle {
+    color: $red;
+    text-align: center;
+    margin-bottom: 4em;
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .submission {
+    .question-group {
+      @include row();
+
+      margin-bottom: 1em;
+      p {
+        font-size: .9em;
+        line-height: 18px;
+      }
+      .question {
+        @include span-columns(4);
+        color: #a9a9a9;
+        text-align: right;
+        text-transform: lowercase;
+        font-variant: small-caps;
+      }
+      .answer {
+        @include span-columns(8);
+      }
+    }
+  }
+}

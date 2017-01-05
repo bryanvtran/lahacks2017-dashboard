@@ -1,0 +1,79 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+section.app-main, section.dashboard {
+  margin-left: 25.58941%;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  section.app-main:last-child, section.dashboard:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 900px) {
+    section.app-main, section.dashboard {
+      margin-left: 17.05961%;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%; }
+      section.app-main:last-child, section.dashboard:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 600px) {
+    section.app-main, section.dashboard {
+      margin-left: 8.5298%;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%; }
+      section.app-main:last-child, section.dashboard:last-child {
+        margin-right: 0; } }
+
+section.dashboard h1, section.dashboard h2, section.dashboard h3, section.dashboard h4, section.dashboard h5, section.dashboard h6 {
+  text-align: center;
+  color: #737373;
+  text-transform: none;
+  margin-bottom: 3em; }
+section.dashboard h2 {
+  font-size: 1.1em; }
+section.dashboard .success-animation {
+  display: block;
+  margin: 0 auto 3em auto; }
+section.dashboard .success-subtitle {
+  color: #fd5c63;
+  text-align: center;
+  margin-bottom: 4em; }
+  section.dashboard .success-subtitle a {
+    text-decoration: underline; }
+section.dashboard .submission .question-group {
+  display: block;
+  margin-bottom: 1em; }
+  section.dashboard .submission .question-group::after {
+    clear: both;
+    content: "";
+    display: block; }
+  section.dashboard .submission .question-group p {
+    font-size: .9em;
+    line-height: 18px; }
+  section.dashboard .submission .question-group .question {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    color: #a9a9a9;
+    text-align: right;
+    text-transform: lowercase;
+    font-variant: small-caps; }
+    section.dashboard .submission .question-group .question:last-child {
+      margin-right: 0; }
+  section.dashboard .submission .question-group .answer {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    section.dashboard .submission .question-group .answer:last-child {
+      margin-right: 0; }
+
+/*# sourceMappingURL=dashboard.css.map */
